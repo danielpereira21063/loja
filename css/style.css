@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Niramit");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav .icon-cart {
+    font-size: 30px;
+    color: #149796;
+}
+
+.logo {
+    width: 180px;
+}
+
+.form-pesquisa {
+    width: 370px;
+    margin: auto;
+}
+
+.text-pesquisa {
+    width: 100%;
+    border: none;
+    border: 1px solid #d3d3d3;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.text-pesquisa:focus {
+    box-shadow: 0 0 0 0;
+    border: 1px solid #d3d3d3;
+    outline: 0;
+}
+
+.form-pesquisa .btn-search {
+    right: 0;
+    height: 100%;
+    color: #149796;
+    padding: 8px 15px;
+    background-color: #fff;
+    border: none;
+    border-right: 1px solid #d3d3d3;
+    border-top: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
+    border-radius: 3px;
+}
+
+nav ul li {
+    margin: 5px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #695a5c;
+    font-weight: 400;
+}
+
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #695a5c;
+}
+
+nav .itens-carrinho {
+    background: #fff;
+    font-family: "Niramit";
+    color: #686868;
+    font-size: 13px;
+    box-shadow: 0px 0px 0px 1px #c0c0c0;
+    padding: 10px;
+    right: 0px;
+    top: 60px;
+    width: 280px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+
+.btn-carrinho {
+    width: 100%;
+    border: none;
+    padding: 7px;
+    font-size: 13px;
+    border-radius: 5px;
+    background: #F6802A;
+    color: #fff;
+}
+
+.price {
+    color: #149796
+}
+
+.price-total {
+    color: #F6802A;
+}
+
+.list-cards-produto {
+    flex-wrap: wrap;
+}
+
+.card-produto {
+    transition: all .5s;
+    height: 300px;
+    width: 230px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px 0px #c0c0c0;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+@media(max-width: 1200px) {
+    .card-produto {
+        width: 190px;
+    }
+}
+
+@media(max-width: 520px) {
+    .card-produto {
+        width: 200px;
+    }
+}
+@media(max-width: 460px) {
+    .card-produto {
+        width: 100%;
+    }
+}
+
+.card-produto>img {
+    width: 150px;
+    align-self: center;
+}
+
+.detalhes-produto .descricao {
+    font-size: 12.5px;
+    color: #4b4b4b;
+}
