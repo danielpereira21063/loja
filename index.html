@@ -18,7 +18,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-light navbar-expand-lg" onmouseleave="windowItensCarrinho('hide')">
+        <nav class="navbar navbar-light navbar-expand-xl">
             <div class="container position-relative">
                 <a href="" class="navbar-brand">
                     <img class="logo" src="img/logo.png" alt="">
@@ -28,38 +28,42 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-
                 <div class="collapse navbar-collapse" id="navbarPrincipal">
                     <form action="" class="d-flex form-pesquisa position-relative">
                         <input class="text-pesquisa" placeholder="O que você está procurando?">
                         <button class="btn-search position-absolute"><i class="fas fa-search"></i></button>
                     </form>
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-person-fill me-1"
-                                    style="color: #149796;"></i>Entrar/Cadastrar</a>
+                        <li class="nav-item me-2">
+                            <a href="" class="nav-link" href="#"><i class="fas fa-home me-1"></i>Início</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link" href="#"><i class="fas fa-comment me-1"
-                                    style="color: #149796;"></i>Atendimento</a>
+                        <li class="nav-item mx-2">
+                            <a href="" class="nav-link"><i class="fas fa-clipboard-list mx-1"></i>Meus pedidos</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link"><i class="fas fa-clipboard-list me-1"
-                                    style="color: #149796;"></i>Meus pedidos</a>
-                        </li>
-                        <li class="nav-item position-relative" onmouseover="windowItensCarrinho('show')">
+                        <li class="nav-item position-relative mx-2" onmouseover="windowItensCarrinho('show')">
                             <a href="#" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
                                 <i class="bi bi-cart icon-cart"></i>
                                 <span class="position-absolute translate-middle badge rounded-pill bg-danger"
                                     style="top: 14px; background-color: #149796 !important">
-                                    99+
+                                    9+
                                     <span class="visually-hidden"></span>
                                 </span>
                             </a>
                         </li>
+
+                        <li class="nav-item position-relative" onmouseover="windowItensCarrinho('show')">
+                            <a href="#" class="nav-link disabled" style="color: #149796;" href="#" tabindex="-1"
+                                aria-disabled="true">
+                                <i class="bi bi-person-circle icon-user"></i>
+                                Entrar/Cadastrar
+                            </a>
+                        </li>
                     </ul>
                 </div>
-                <div class="itens-carrinho position-absolute">
+
+
+                <div class="itens-carrinho position-absolute" onmouseleave="windowItensCarrinho('hide')">
+                    <h6 class="text-center mb-4 fw-bold">Carrinho <small>(9+)</small></h6>
                     <div>
                         <div class="item-carrinho">
                             <div class="d-flex justify-content-evenly align-items-center">
@@ -115,7 +119,8 @@
                         </div>
                     </div>
                     <div class="text-center">
-                        <p style="font-size: 15px;">Subtotal: <span class="price-total fw-bold">R$ 122,45</span></p>
+                        <p style="font-size: 15px;">Subtotal: <span class="ms-1 price-total fw-bold">R$ 122,45</span>
+                        </p>
                         <button class="btn-carrinho">Ir para o meu carrinho</button>
                     </div>
                 </div>
@@ -137,7 +142,8 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="https://images3.farmaciasapp.com.br/img-cache/file-61d5b2d4b25ee4.04953447_30a4fa077cbdac70b66a6d1d50711769.jpg?hash=d88c2222b892b085bfcecf4cf3042421" class="d-block w-100" alt="...">
+                            <img src="https://images3.farmaciasapp.com.br/img-cache/file-61d5b2d4b25ee4.04953447_30a4fa077cbdac70b66a6d1d50711769.jpg?hash=d88c2222b892b085bfcecf4cf3042421"
+                                class="d-block w-100" alt="...">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -163,7 +169,8 @@
                 </div>
                 <div class="col-lg-8 d-flex justify-content-between list-cards-produto">
                     <div class="card-produto d-flex flex-column">
-                        <img src="https://www.drogariaminasbrasil.com.br/media/product/311/dipirona-monoidratada-500mg-com-30-comprimidos-generico-prati-donaduzzi-4c8.jpg" alt="">
+                        <img src="https://www.drogariaminasbrasil.com.br/media/product/311/dipirona-monoidratada-500mg-com-30-comprimidos-generico-prati-donaduzzi-4c8.jpg"
+                            alt="">
                         <div class="detalhes-produto">
                             <p class="descricao d-block mt-3">
                                 Dipirona Sódica 500mg/ml EMS Genérico Gotas 10ml - Farmacia Indiana
@@ -171,7 +178,8 @@
                         </div>
                     </div>
                     <div class="card-produto d-flex flex-column">
-                        <img src="https://www.drogariaminasbrasil.com.br/media/product/311/dipirona-monoidratada-500mg-com-30-comprimidos-generico-prati-donaduzzi-4c8.jpg" alt="">
+                        <img src="https://www.drogariaminasbrasil.com.br/media/product/311/dipirona-monoidratada-500mg-com-30-comprimidos-generico-prati-donaduzzi-4c8.jpg"
+                            alt="">
                         <div class="detalhes-produto">
                             <p class="descricao d-block mt-3">
                                 Dipirona Sódica 500mg/ml EMS Genérico Gotas 10ml - Farmacia Indiana
@@ -179,7 +187,8 @@
                         </div>
                     </div>
                     <div class="card-produto d-flex flex-column">
-                        <img src="https://www.drogariaminasbrasil.com.br/media/product/311/dipirona-monoidratada-500mg-com-30-comprimidos-generico-prati-donaduzzi-4c8.jpg" alt="">
+                        <img src="https://www.drogariaminasbrasil.com.br/media/product/311/dipirona-monoidratada-500mg-com-30-comprimidos-generico-prati-donaduzzi-4c8.jpg"
+                            alt="">
                         <div class="detalhes-produto">
                             <p class="descricao d-block mt-3">
                                 Dipirona Sódica 500mg/ml EMS Genérico Gotas 10ml - Farmacia Indiana
@@ -187,7 +196,8 @@
                         </div>
                     </div>
                     <div class="card-produto d-flex flex-column">
-                        <img src="https://www.drogariaminasbrasil.com.br/media/product/311/dipirona-monoidratada-500mg-com-30-comprimidos-generico-prati-donaduzzi-4c8.jpg" alt="">
+                        <img src="https://www.drogariaminasbrasil.com.br/media/product/311/dipirona-monoidratada-500mg-com-30-comprimidos-generico-prati-donaduzzi-4c8.jpg"
+                            alt="">
                         <div class="detalhes-produto">
                             <p class="descricao d-block mt-3">
                                 Dipirona Sódica 500mg/ml EMS Genérico Gotas 10ml - Farmacia Indiana
@@ -198,6 +208,7 @@
             </div>
         </div>
     </section>
+
     <script>
         $(".itens-carrinho").hide();
 
